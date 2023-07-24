@@ -5,6 +5,7 @@
  * @array: unsorted array
  * @low: starting index
  * @high: ending index
+ * @size: size of array
  *
  * Return: index of the pivot
  */
@@ -41,10 +42,11 @@ size_t partition(int *array, size_t low, size_t high, size_t size)
 }
 
 /**
- * quick_sort_lemuto - helps quicksort implement the lomuto partition
+ * quick_sort_lomuto - helps quicksort implement the lomuto partition
  * @array: the array to be sorted
  * @low: starting index
  * @high: last index
+ * @size: array size
  */
 void quick_sort_lomuto(int *array, size_t low, size_t high, size_t size)
 {
